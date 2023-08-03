@@ -57,7 +57,7 @@ inline void redirect_clog(const std::filesystem::path& path,
 /// @returns std::clog after writing now string to it first.
 inline std::ostream& clog_now() noexcept
 {
-  return std::clog << dmitigr::str::now() << ": ";
+  return std::clog << dmitigr::chrx::now() << ": ";
 }
 
 /**
