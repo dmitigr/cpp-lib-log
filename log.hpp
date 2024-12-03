@@ -19,7 +19,6 @@
 
 #include "../base/fsx.hpp"
 #include "../chrx/format.hpp"
-#include "../os/pid.hpp"
 #include "exceptions.hpp"
 
 #include <atomic>
@@ -34,15 +33,6 @@ inline std::ofstream log_file_stream;
 
 /// @see clog().
 inline std::atomic_bool is_clog_with_now;
-
-/// Creating the file at `path` and dumping the PID into it.
-inline void dump_pid(const std::filesystem::path& path)
-{
-  if (std::ofstream pf{path, std::ios_base::trunc})
-    pf << os::pid() << std::endl;
-  else
-    throw Exception{"cannot open PID file " + path.string()};
-}
 
 /// Redirecting `std::clog` to file at `path`.
 inline void redirect_clog(const std::filesystem::path& path,
