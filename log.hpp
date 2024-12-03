@@ -17,8 +17,8 @@
 #ifndef DMITIGR_LOG_LOG_HPP
 #define DMITIGR_LOG_LOG_HPP
 
+#include "../base/fsx.hpp"
 #include "../chrx/format.hpp"
-#include "../fsx/filesystem.hpp"
 #include "../os/pid.hpp"
 #include "exceptions.hpp"
 

@@ -32,7 +32,7 @@ set(dmitigr_log_headers
 # Dependencies
 # ------------------------------------------------------------------------------
 
-set(dmitigr_libs_log_deps base fsx os str)
+set(dmitigr_libs_log_deps base os str)
 
 # ------------------------------------------------------------------------------
 # Tests
