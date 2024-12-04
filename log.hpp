@@ -18,7 +18,7 @@
 #define DMITIGR_LOG_LOG_HPP
 
 #include "../base/fsx.hpp"
-#include "../chrx/format.hpp"
+#include "../base/chrx.hpp"
 #include "exceptions.hpp"
 
 #include <atomic>
